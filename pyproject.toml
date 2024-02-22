@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "python-ai"
+version = "0.0.1"
+description = ""
+authors = ["yupix <yupi0982@outlook.jp>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+mipa = "^0.4.1"
+mipac = "^0.6.2"
+prisma = "^0.12.0"
+
+[tool.poetry.group.dev.dependencies]
+pyright = "^1.1.351"
+ruff = "^0.2.2"
+pre-commit = "^3.6.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+line-length = 99
+
+[tool.pyright]
+include = ["src"]
+venvPath = "."
+venv = ".venv"
