@@ -36,7 +36,7 @@ class PythonAi(commands.Bot):
 
     async def on_note(self, note: Note):
         timeline = TIMELINE.get()
-        timeline.append(note)
+        timeline.insert(0, note)
         TIMELINE.set(timeline)
 
 
