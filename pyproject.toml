@@ -26,5 +26,6 @@ line-length = 99
 
 [tool.pyright]
 include = ["src"]
+exclude = ["**/__pycache__"]
 venvPath = "."
 venv = ".venv"
